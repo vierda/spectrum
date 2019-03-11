@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300px"
+    android:layout_marginLeft="@dimen/_8px"
+    android:layout_marginRight="@dimen/_11px"
+    app:cardBackgroundColor="@color/color_ffffff"
+    app:cardCornerRadius="@dimen/_4px"
+    app:cardElevation="@dimen/_8px"
+    app:cardMaxElevation="@dimen/_8px"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_card">
+
+        <ImageView
+            android:id="@+id/company_logo"
+            android:layout_width="@dimen/_200px"
+            android:layout_height="@dimen/_200px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/_15px"
+            android:layout_marginLeft="@dimen/_20px"/>
+
+        <TextView
+            android:id="@+id/see_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_logo"
+            android:text="@string/see_members"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/_20px"
+            android:layout_marginLeft="@dimen/_50px"
+            android:textSize="@dimen/_25px"/>
+
+
+        <LinearLayout
+            android:id="@+id/company_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20px"
+            android:layout_marginLeft="@dimen/_20px"
+            android:layout_marginTop="@dimen/_15px"
+            android:layout_toRightOf="@+id/company_logo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_16px"
+                android:layout_marginTop="@dimen/_5px"
+                android:textSize="@dimen/_25pt"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_minus_2px"
+                android:layout_marginRight="@dimen/_16px"
+                android:textSize="@dimen/_25pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_16px"
+                android:layout_marginTop="@dimen/_10px"
+                android:textSize="@dimen/_16pt"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30px"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20px"
+            android:layout_marginBottom="@dimen/_20px"
+            android:layout_below="@id/company_container">
+
+            <ImageView
+                android:id="@+id/follow"
+                android:layout_width="@dimen/_60px"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_20px"
+                android:src="@drawable/ic_star"/>
+
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="@dimen/_60px"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_favorite"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

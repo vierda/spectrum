@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300px"
+    android:layout_marginLeft="@dimen/_8px"
+    android:layout_marginRight="@dimen/_11px"
+    app:cardBackgroundColor="@color/color_ffffff"
+    app:cardCornerRadius="@dimen/_4px"
+    app:cardElevation="@dimen/_8px"
+    app:cardMaxElevation="@dimen/_8px"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_card">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/_200px"
+            android:layout_height="@dimen/_200px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/_15px"
+            android:layout_marginLeft="@dimen/_20px"
+            android:src="@mipmap/ic_user"/>
+
+
+        <RelativeLayout
+            android:id="@+id/company_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20px"
+            android:layout_marginLeft="@dimen/_20px"
+            android:layout_marginTop="@dimen/_15px"
+            android:layout_toRightOf="@+id/user_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_16px"
+                android:layout_marginTop="@dimen/_5px"
+                android:textSize="@dimen/_30pt"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_below="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_16px"
+                android:layout_marginTop="@dimen/_10px"
+                android:textSize="@dimen/_22pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_below="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_16px"
+                android:layout_marginTop="@dimen/_10px"
+                android:textSize="@dimen/_22pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_below="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_16px"
+                android:layout_marginTop="@dimen/_10px"
+                android:textSize="@dimen/_22pt"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_below="@+id/phone"
+                android:layout_width="@dimen/_60px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_20px"
+                android:layout_marginBottom="@dimen/_20px"
+                android:src="@drawable/ic_favorite"/>
+
+        </RelativeLayout>l
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

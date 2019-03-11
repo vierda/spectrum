@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Spectrum</string>
+    <string name="follow">Follow</string>
+    <string name="followed">Followed</string>
+    <string name="see_members"><u>See Members</u></string>
+    <string name="years">years</string>
+
+    <string-array name="sort_arrays">
+        <item>-Sort Company Name-</item>
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+    <string-array name="sort_arrays_member">
+        <item>-Sort Member By-</item>
+        <item>Age Ascending</item>
+        <item>Age Descending</item>
+        <item>Name Ascending</item>
+        <item>Name Descending</item>
+    </string-array>
+
+</resources>
